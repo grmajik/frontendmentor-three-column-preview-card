@@ -68,7 +68,6 @@ body {
 .vehicles__sedans,
 .vehicles__suvs,
 .vehicles__luxury {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,14 +160,13 @@ body {
 @media only screen and (min-width: 980px) {
   .vehicles {
     flex-direction: row;
+    margin: 120px;
   }
 
   .vehicles__sedans,
   .vehicles__suvs,
   .vehicles__luxury {
     height: 70vh;
-    width: 25vw;
-
   }
 
   .vehicles__sedans {
