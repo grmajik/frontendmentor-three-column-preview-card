@@ -1,0 +1,181 @@
+/* BASIC RESET */
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* END BASIC RESET */
+
+/* BEGIN VARIABLE DECLARATIONS */
+
+:root {
+  --p-color: hsla(0, 0%, 100%, 0.75);
+  --h1-color: hsl(0, 0%, 95%);
+}
+
+/* END OF VARIABLE DECLARATIONS */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vehicles {
+  margin: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  border-radius: 50px;
+}
+
+.vehicles__sedans,
+.vehicles__suvs,
+.vehicles__luxury {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px 50px;
+}
+
+.vehicles__sedans {
+  background-color: #e28525;
+  flex-grow: 1;
+  border-radius: 10px 10px 0 0;
+}
+
+.vehicles__suvs {
+  background-color: #016972;
+  flex-grow: 1;
+}
+
+.vehicles__luxury {
+  background-color: #00403f;
+  flex-grow: 1;
+  border-radius: 0 0 10px 10px;
+}
+
+.vehicles__image {
+  margin: 25px 0;
+}
+
+.vehicles h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: var(--h1-color);
+  font-size: 2.7rem;
+  margin-bottom: 25px;
+}
+
+.vehicles p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--p-color);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.button {
+  margin: 25px 0;
+  border-radius: 30px;
+  padding: 15px 30px;
+  border: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  transition: all .1s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #f0f0f0;
+}
+
+.button__sedans {
+  color: #e28525;
+}
+
+.button__sedans:active {
+  color: #e28525;
+}
+
+.button__suvs {
+  color: #016972;
+}
+
+.button__suvs:active {
+  color: #016972;
+}
+
+.button__luxury {
+  color: #00403f;
+}
+
+.button__luxury:active {
+  color: #00403f;
+}
+
+@media only screen and (min-width: 980px) {
+  .vehicles {
+    flex-direction: row;
+  }
+
+  .vehicles__sedans,
+  .vehicles__suvs,
+  .vehicles__luxury {
+    height: 70vh;
+    width: 25vw;
+
+  }
+
+  .vehicles__sedans {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .vehicles__luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
