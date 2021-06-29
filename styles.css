@@ -158,15 +158,20 @@ body {
 }
 
 @media only screen and (min-width: 980px) {
+  html {
+    font-size: 14px;
+  }
+
   .vehicles {
     flex-direction: row;
-    margin: 150px;
+    margin: 80px;
   }
 
   .vehicles__sedans,
   .vehicles__suvs,
   .vehicles__luxury {
-    height: 65vh;
+    height: 70vh;
+    width: 20vw;
   }
 
   .vehicles__sedans {
